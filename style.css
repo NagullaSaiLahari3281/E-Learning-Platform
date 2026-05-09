@@ -1,0 +1,114 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial;
+}
+
+/* Body */
+body {
+  background: #f4f4f4;
+  text-align: center;
+}
+
+/* Header */
+header {
+  background: #222;
+  color: white;
+  padding: 15px;
+}
+
+/* Search */
+.search-box {
+  margin: 20px;
+}
+
+.search-box input {
+  width: 90%;
+  max-width: 400px;
+  padding: 12px;
+  border-radius: 20px;
+  border: 1px solid #ccc;
+}
+
+/* Dashboard */
+#dashboard {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+  margin: 20px;
+}
+
+.dashboard-item {
+  background: #e6ffe6;
+  border: 1px solid green;
+  padding: 10px 15px;
+  border-radius: 20px;
+  font-size: 14px;
+}
+
+/* Courses */
+#courses {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 15px;
+  width: 90%;
+  margin: auto;
+}
+
+.course {
+  background: white;
+  padding: 15px;
+  border-radius: 10px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+.course img {
+  width: 80px;
+  height: 80px;
+}
+
+.course h3 {
+  margin: 10px 0;
+}
+
+/* Buttons */
+button {
+  background: red;
+  color: white;
+  padding: 8px 12px;
+  border: none;
+  margin: 5px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+/* Modal */
+.modal {
+  display: none;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  width: 300px;
+  max-width: 90%;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+}
+
+/* 📱 Mobile */
+@media (max-width: 600px) {
+  #courses {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* Tablet */
+@media (max-width: 900px) {
+  #courses {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}

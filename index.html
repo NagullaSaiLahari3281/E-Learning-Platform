@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>E-Learning Platform</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header>
+  <h1>📚 E-Learning Platform</h1>
+</header>
+
+<div class="search-box">
+  <input type="text" id="search" placeholder="Search courses..." onkeyup="searchCourses()">
+</div>
+
+<section>
+  <h2>📊 My Dashboard</h2>
+  <div id="dashboard"></div>
+</section>
+
+<section>
+  <h2>📚 Courses</h2>
+  <div id="courses" class="courses"></div>
+</section>
+
+<!-- Lesson -->
+<div id="lessonBox" class="modal">
+  <div class="modal-content">
+    <h3 id="lessonTitle"></h3>
+    <p id="lessonContent"></p>
+    <button onclick="startQuiz()">Take Quiz</button>
+    <button onclick="closeLesson()">Close</button>
+  </div>
+</div>
+
+<!-- Quiz -->
+<div id="quizBox" class="modal">
+  <div class="modal-content">
+    <h3 id="question"></h3>
+    <div id="answers"></div>
+    <button onclick="submitQuiz()">Submit</button>
+    <button onclick="closeQuiz()">Close</button>
+  </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
