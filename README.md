@@ -6,7 +6,7 @@ A simple and interactive E-Learning Platform built using **HTML**, **CSS**, and 
 
 ## 🚀 Live Demo
 
-👉 [E-Learning Platform Live Demo]((https://github.com/NagullaSaiLahari3281/E-Learning-Platform)/)
+👉 [E-Learning Platform Live Demo](](https://nagullasailahari3281.github.io/E-Learning-Platform/)/)
 
 ---
 
